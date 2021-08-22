@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> JavaScript 语法 </h2>
+    <p> 使用变量进行赋值,并进行求和 </p>
+    <p id = 'demo1'></p>
+    <p id = 'demo'>在这里显示结果</p>
+    <script>
+        function myfunction(){
+            var Last_name , First_name;
+            // 使用等号进行赋值
+            First_name = "asdf";
+            Last_name = "hhhh";
+            document.getElementById("demo").innerHTML = First_name + " " + Last_name;
+        }
+    </script>
+    <button onclick="myfunction()">试一下</button>
+</body>
+</html>
