@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>绝不要把字符串创建为对象</h1>
+
+    <p>字符串与对象无法安全地比较。</p>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+        var x = "Bill";              // x 是字符串
+        var y = new String("Bill");  // y 是对象
+        document.getElementById("demo").innerHTML = (x==y);
+        // 一个是字符串 一个是字符串对象
+        document.getElementById("demo1").innerHTML = (x===y);
+        var z = new String("Bill");
+        // 不是同一个对象
+        document.getElementById("demo2").innerHTML = (x===z);
+
+    </script>
+</body>
+</html>

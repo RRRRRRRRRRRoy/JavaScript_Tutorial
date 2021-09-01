@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript 字符串方法</h1>
+
+    <p>slice() 提取字符串的某个部分，并在新字符串中返回被提取的部分。</p>
+
+    <p id="demo"></p>
+
+    <p>slice() 参数采用负数倒着来。</p>
+
+    <p id="demo1"></p>
+
+    <p>slice() 省略第二个参数。</p>
+
+    <p id="demo2"></p>
+    
+    <p>slice() 省略第二个参数。</p>
+
+    <p id="demo3"></p>
+    
+
+    <script>
+        var str = "Apple, Banana, Mango";
+        var res = str.slice(7,13);
+        document.getElementById("demo").innerHTML = res; 
+        var res2 = str.slice(-13,-7);
+        document.getElementById("demo1").innerHTML = res2;
+        var res3 = str.slice(7);
+        document.getElementById("demo2").innerHTML = res3;
+        var res4 = str.slice(-13);
+        document.getElementById("demo3").innerHTML = res4;
+    </script>
+
+</body>
+</html>

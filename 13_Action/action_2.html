@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript 事件</h1>
+
+    <button onclick="document.getElementById('demo').innerHTML=Date()">时间是？</button>
+
+    <p id="demo"></p>
+
+    <button onclick="this.innerHTML=Date()">现在的时间是多少？</button>
+
+    <p id="demo123"></p>
+    <script>
+        function displaydate(tagname){
+            document.getElementById(tagname).innerHTML = Date();
+        }
+    </script>
+
+    <button onclick="displaydate('demo1')">现在的时间？</button>
+    <p id="demo1"></p>
+
+</body>
+
+</html>

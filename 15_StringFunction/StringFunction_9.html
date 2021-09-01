@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript 字符串方法</h1>
+
+    <p>substr() 提取字符串的某个部分，并在新字符串中返回被提取的部分。</p>
+
+    <p id="demo"></p>
+    
+    <p>substr() 传入一个负参数。</p>
+
+    <p id="demo1"></p>
+    
+    <script>
+        var str = "Apple, Banana, Mango";
+        // 第二个参数表示截取字符串的长度
+        var res = str.substr(7,6);
+        document.getElementById("demo").innerHTML = res;
+
+        var res1 = str.substr(-5);
+        document.getElementById("demo1").innerHTML = res1;
+    </script>
+
+</body>
+</body>
+</html>
