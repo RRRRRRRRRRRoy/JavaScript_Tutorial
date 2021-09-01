@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript 数字</h1>
+
+    <p>toString() 方法以基数 2 到 36 输出字符串：</p>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+        var myNumber = 32;
+        var y = 123;
+        document.getElementById("demo").innerHTML = myNumber.toString();
+        document.getElementById("demo1").innerHTML = myNumber.toString() + y;
+        document.getElementById("demo2").innerHTML = (myNumber + y).toString();
+        document.getElementById("demo3").innerHTML = (y).toString() + myNumber;
+    </script>
+
+</body>
+</html>
