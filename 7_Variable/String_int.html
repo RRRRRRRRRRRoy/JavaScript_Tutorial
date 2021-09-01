@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> JavaScript 变量 </h2>
+    <p> 字符串与数字相加，发生集联 </p>
+    <p id = 'demo1'>125 + 80之后与字符串5发生拼接</p>
+    <p id = 'demo'>在这里显示结果</p>
+    <script>
+        function myfunction(){
+        var price1 = 125,price2 = 80;
+        var price3 = "5";
+        var total_price = price1 + price2 + price3;
+        document.getElementById('demo').innerHTML=total_price;
+        }
+    </script>
+    <button onclick="myfunction()">试一下</button>
+</body>
+</html>

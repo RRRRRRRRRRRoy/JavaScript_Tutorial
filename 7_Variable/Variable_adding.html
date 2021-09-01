@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> JavaScript 变量 </h2>
+    <p> 使用变量进行赋值,并进行求和 </p>
+    <p id = 'demo1'>三个价格分别为125，80，5，价格总和是多少：</p>
+    <p id = 'demo'>在这里显示结果</p>
+    <p id = 'demo2'>在这里显示结果</p>
+    <script>
+        /*
+            构造变量名称（唯一标识符）的通用规则是：
+                名称可包含字母、数字、下划线和美元符号
+                名称必须以字母开头
+                名称也可以 $ 和 _ 开头（但是在本教程中我们不会这么做）
+                名称对大小写敏感（y 和 Y 是不同的变量）
+        */
+        function myfunction(){
+        var price1 = 125,price2 = 80;
+        var price3 = 5;
+        var total_price = 210;
+        var test;
+        document.getElementById('demo').innerHTML=total_price;
+        document.getElementById('demo2').innerHTML=test;
+        }
+    </script>
+    <button onclick="myfunction()">试一下</button>
+</body>
+</html>
