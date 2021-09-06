@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>单击按钮以显示基于时间的问候语：</p>
+
+    <button onclick="myFunction()">试一试</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction(){
+            // 还可以添加elif
+            let cur_mins = new Date().getMinutes();
+            if(cur_mins % 2 == 1){
+                document.getElementById("demo").innerHTML = "Not bad";
+            }else{
+                document.getElementById("demo").innerHTML = "Pretty Good";
+            }
+        }
+    </script>
+</body>
+</html>

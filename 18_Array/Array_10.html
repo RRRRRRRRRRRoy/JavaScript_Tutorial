@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript 数组</h1>
+
+    <p>如果在访问数组时使用命名索引，JavaScript 会将数组重新定义为标准对象，并且某些数组方法和属性将产生未定义或不正确的结果。</p>
+
+    <p id="demo"></p>
+
+    <script>
+        // 数组使用数字索引
+        // 对象使用命名索引
+        var person = [];
+        person["firstName"] = "John";
+        person["lastName"] = "Doe";
+        person["age"] = 46; 
+        document.getElementById("demo").innerHTML =
+        person[0] + " " + person.length + "<br>" + person.firstName + " " + person.lastName + " " + person.age;
+    </script>
+</body>
+</html>

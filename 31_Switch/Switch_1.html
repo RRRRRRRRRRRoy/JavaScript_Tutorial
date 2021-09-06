@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>这个是Switch的demo</h1>
+    <p>可以通过default来设置switch的默认值</p>
+    <p id="demo"></p>
+    <script>
+        var day;
+        var current_day = new Date().getDay();
+        // break跳出当前循环
+        switch(current_day){
+            case 0:
+                day = "周日";
+                break;
+            case 1:
+                day = "周一";
+                break;
+            case 2:
+                day = "周二";
+                break;
+            case 3:
+                day = "周三";
+                break;
+            case 4:
+                day = "周四";
+                break;ß
+            case 5:
+                day = "周五";
+                break;
+            default:
+                day = "周六";
+        }
+        document.getElementById("demo").innerHTML = day;
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript 数组方法</h1> 
+
+    <h2>unshift()</h2>
+
+    <p>unshift() 方法返回新数组的长度：</p>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo1").innerHTML = fruits;
+    document.getElementById("demo2").innerHTML = fruits.unshift("Lemon");
+    document.getElementById("demo3").innerHTML = fruits;
+    </script>
+
+    <p><b>注释：</b>unshift() 方法在 Internet Explorer 8 及更早版本中无法正常工作，会插入值，但返回值将是 <em>undefined</em>。</p>
+</body>
+</html>

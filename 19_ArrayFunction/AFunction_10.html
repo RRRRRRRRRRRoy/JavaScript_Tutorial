@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript 数组方法</h1> 
+
+    <h2>slice()</h2>
+
+    <p>当给 slice() 方法赋予两个参数时，它从 <i>start</i> 参数中选择数组元素，直到（但不包括）<i>end</i> 参数：</p>
+
+    <p id="demo"></p>
+
+    <script>
+        //slice 包含头部 不包含尾部
+        var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+        var citrus = fruits.slice(1,3);
+        document.getElementById("demo").innerHTML = fruits + "<br><br>" + citrus;
+    </script>
+</body>
+</html>
