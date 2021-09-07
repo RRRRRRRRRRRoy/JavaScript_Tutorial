@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript 能够验证输入</h2>
+
+    <p>请输入 1 与 10 之间的数：</p>
+    
+    <input id="numb">
+    
+    <button type="button" onclick="myFunction()">提交</button>
+    
+    <p id="demo"></p>
+    
+    <script>
+        function myFunction() {
+            var x, text;
+            
+            // 获取 id="numb" 的输入字段的值
+            x = document.getElementById("numb").value;
+            text = document.getElementById("demo");
+            try{
+            // 如果 x 不是数字或小于 1 或大于 10
+                if (isNaN(x) || x=="") {
+                    throw "输入数字为空";
+                }
+                if(x < 1 || x > 10){
+                        throw "输入的数字不在指定范围";
+                }
+                //尽量不要这么写
+                throw x;
+            }catch(err){
+                text.innerHTML = "提示：" + err;
+            }
+            //document.getElementById("demo").innerHTML = msg;
+        }
+    </script>
+</body>
+</html>

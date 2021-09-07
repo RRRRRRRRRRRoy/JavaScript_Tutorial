@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="id1" type="number" style="width:200px" min=100 max="300">
+    <button onclick="myFunction()">OK</button>
+
+    <p id="demo"></p>
+
+    <script>
+    function myFunction() {
+        var txt = "";
+        if (document.getElementById("id1").validity.rangeOverflow) {
+            txt = "值太大";
+        }else if(document.getElementById("id1").validity.rangeUnderflow){
+            txt = "值太小";
+        }
+        document.getElementById("demo").innerHTML = txt;
+    }
+    </script> 
+</body>
+</html>

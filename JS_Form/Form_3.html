@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>输入数字并点击提交按钮进行提交</p>
+
+    <input id="input_box" min="100" max="300" type="number" required>
+
+    <button onclick="myFunction()">提交</button>
+
+    <p>如果该数字小于 100 或大于 300，将显示错误消息。</p>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+          var inpObj = document.getElementById("input_box");
+          if (!inpObj.checkValidity()) {
+            document.getElementById("demo").innerHTML = inpObj.validationMessage;
+          } else {
+            document.getElementById("demo").innerHTML = "输入有效";
+          } 
+        } 
+    </script>
+</body>
+</html>
